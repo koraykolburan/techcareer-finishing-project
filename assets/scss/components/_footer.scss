@@ -1,0 +1,250 @@
+footer {
+    background: #262626;
+    clear: both;
+    overflow: hidden;
+    #footer .column {
+        width: 17%;
+    }
+    #footer .column li {
+        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.6px;
+        color: gray !important;
+    }
+    #footer .column .contact-block ul li {
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    #footer {
+        top: auto;
+        margin-top: 0px;
+    }
+    #footer .column li .fa {
+        color: #ebb5ac;
+        height: 25px;
+        margin-top: 5px;
+        width: 25px;
+        font-size: 18px;
+        float: left;
+    }
+    #footer .column li .fa.fa-envelope-o {
+        font-size: 16px;
+    }
+    #footer .column .contact-block ul {
+        padding-left: 0;
+        color: gray;
+    }
+    .footer-blocks {
+        width: 100%;
+        padding: 112px 0 82px;
+        position: relative;
+        float: left;
+        display: flex;
+    }
+    #footer .column.footerleft {
+        width: 25%;
+    }
+    h5,
+    #footer .news-title {
+        color: #ffffff;
+        font: 500 18px/22px 'Poppins', sans-serif;
+        text-transform: capitalize !important;
+        margin: 0 0 30px 0;
+        cursor: pointer;
+        letter-spacing: 0.6px;
+    }
+    #info {
+        ul {
+            li {
+                a {
+                    color: gray !important;
+                }
+                a:hover {
+                    color: #ebb5ac !important;
+                }
+            }
+        }
+    }
+    #extra-link {
+        ul {
+            li {
+                a {
+                    color: gray !important;
+                }
+                a:hover {
+                    color: #ebb5ac !important;
+                }
+            }
+        }
+    }
+    .column ul li a {
+        color: gray !important;
+    }
+    .column ul li a:hover {
+        color: #ebb5ac !important
+    }
+    #footer .footerright {
+        width: 24%;
+    }
+    .newsletter {
+        .container {
+            padding: 0 !important;
+        }
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 0;
+        .box-heading {
+            float: none;
+            font-size: 18px;
+            color: #fff;
+            text-transform: capitalize;
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: .6px;
+            background: none;
+            text-align: left;
+            padding: 0;
+            margin-bottom: 22px;
+        }
+        .news-subtitle {
+            display: inline-block;
+            font-size: 13px;
+            letter-spacing: 0.6px;
+            color: #888;
+            line-height: 30px;
+            padding: 0;
+            text-align: left;
+        }
+        .newsright {
+            display: inline-block;
+            width: 100%;
+            padding: 15px 0;
+        }
+        .form-group {
+            margin: 0;
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+        label {
+            display: none;
+        }
+        .input-news {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+        #txtemail {
+            border: none;
+            min-width: auto;
+            padding: 10px 42px 10px 12px;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 0.6px;
+            background: #fff;
+            font-family: 'Poppins', sans-serif;
+            color: #222;
+        }
+        .subscribe-btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            .btn.btn-lg {
+                text-transform: capitalize;
+                float: left;
+                font-weight: 500;
+                letter-spacing: 0.6px;
+                margin-top: 0;
+                color: #ffffff;
+                border: 0;
+                padding: 0 0px;
+                width: 45px;
+                font-size: 0px;
+                height: 45px;
+                background: url("https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/catalog/view/theme/Styleway/image/codezeel/subscribe.svg") no-repeat scroll;
+                background-size: 20px;
+                background-position: center;
+                transition: all 0.3s ease 0s;
+                -webkit-transition: all 0.3s ease 0s;
+                -moz-transition: all 0.3s ease 0s;
+                -ms-transition: all 0.3s ease 0s;
+                -o-transition: all 0.3s ease 0s;
+            }
+        }
+    }
+    .social-block {
+        margin-top: 0px;
+        float: left;
+        ul {
+            padding: 0px;
+            margin: 0;
+        }
+        li {
+            display: inline-block;
+            text-align: left;
+            margin: 0;
+            margin-right: 0px;
+        }
+    }
+    .social-block ul li a {
+        font-size: 17px;
+        font-family: "FontAwesome";
+        display: inline-block;
+        font-weight: normal;
+        height: 35px;
+        width: 35px;
+        margin-right: 2px;
+        color: #888;
+        line-height: 38px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}
+
+.bottomfooter {
+    color: #888;
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    float: left;
+    letter-spacing: .7px;
+    border-top: 1px solid #464646;
+    .container .footer-inner {
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+    .container .row {
+        margin: 0px;
+    }
+    .paiement_logo_block {
+        background: none;
+        border: none;
+        text-align: end;
+        padding-top: 2px;
+        padding-bottom: 0px;
+        float: right !important;
+        cursor: pointer;
+        img {
+            margin: 0 10px 0px 0;
+        }
+    }
+    p.powered {
+        text-align: left;
+        color: #888;
+        margin-bottom: 0px;
+        float: left;
+        letter-spacing: .6px;
+        a {
+            color: #ebb5ac !important;
+            text-decoration: underline;
+        }
+    }
+    p {
+        margin: 0 0 10px;
+    }
+}

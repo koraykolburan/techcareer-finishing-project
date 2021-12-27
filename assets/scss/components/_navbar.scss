@@ -1,0 +1,244 @@
+// .nav {
+//     margin-bottom: 0;
+//     padding-left: 0;
+//     list-style: none;
+// }
+#top {
+    line-height: initial;
+    letter-spacing: 0.6px;
+    color: $grey-color;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    min-height: 40px;
+    background: #262626;
+    padding: 0;
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nav-left {
+        display: inline-block !important;
+        .nav-text {
+            padding: 10px 0;
+            position: relative;
+            color: $grey-color;
+        }
+    }
+    .nav-right {
+        padding-top: 0px;
+        float: right;
+        font-size: 13px !important;
+        .dropdown-myaccount {
+            position: relative !important;
+            display: block;
+            float: left;
+            padding: 5px 1px 10px;
+            width: auto;
+            margin-right: 4px;
+            background-color: none !important;
+            a {
+                color: $grey-color !important;
+                border: none !important;
+                font-size: 13px !important;
+            }
+            a:hover,
+            a:focus {
+                color: #ebb5ac !important;
+                text-decoration: none !important;
+            }
+            .dropdown-menu {
+                a {
+                    color: $first-color !important;
+                    white-space: nowrap;
+                    font-size: 13px;
+                    padding: 5px 8px;
+                    margin-bottom: 2px;
+                    display: block;
+                    font-weight: normal;
+                    float: left;
+                    width: 100%;
+                    text-align: left;
+                    text-transform: capitalize;
+                    line-height: initial
+                }
+            }
+            .dropdown-menu.show {
+                margin-top: 0;
+                min-width: 170px;
+                padding: 10px 7px;
+                border-color: $border-color;
+                font-size: 14px !important;
+            }
+        }
+        .lang-currency {
+            float: left;
+            padding: 0px;
+            .language {
+                padding-right: 0;
+                padding: 5px 0 0;
+                width: auto;
+                text-align: left;
+                float: none;
+                display: inline-block;
+                a {
+                    color: $grey-color !important;
+                    border: none !important;
+                    font-size: 13px !important;
+                }
+                a:hover,
+                a:focus {
+                    color: #ebb5ac !important;
+                    text-decoration: none !important;
+                }
+            }
+            .currency {
+                padding-right: 0;
+                padding: 5px 0 0;
+                width: auto;
+                text-align: left;
+                float: none;
+                display: inline-block;
+                a {
+                    color: $grey-color !important;
+                    border: none !important;
+                    font-size: 13px !important;
+                }
+                a:hover,
+                a:focus {
+                    color: #ebb5ac !important;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+}
+
+header {
+    z-index: 99 !important;
+    position: relative !important;
+    min-height: 90px !important;
+    .header-menu {
+        float: none !important;
+        margin: 11px auto;
+        text-align: center;
+        // width: auto;
+    }
+    .header-container {
+        height: auto !important;
+        width: 100% !important;
+        .row {
+            margin: 0 !important;
+            display: block !important;
+            .header-main {
+                display: block !important;
+                float: left !important;
+                position: relative !important;
+                width: 100% !important;
+                text-align: center !important;
+                .header-cart {
+                    text-align: center;
+                    position: relative;
+                    width: auto;
+                    z-index: 9;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                    padding: 13px 0px 7px 0px;
+                    float: right;
+                }
+                .fav-icon {
+                    position: relative;
+                    margin-top: 34px;
+                    text-align: center;
+                    margin-bottom: 0px;
+                    margin-right: 17px;
+                    margin-left: 17px;
+                    width: auto;
+                    float: right;
+                }
+                .search-icon {
+                    width: auto;
+                    z-index: 9;
+                    float: right;
+                    padding: 34px 0 0 0;
+                }
+                .header-cart:hover,
+                .fav-icon:hover,
+                .search-icon:hover {
+                    color: #ebb5ac !important;
+                }
+            }
+        }
+    }
+}
+
+.header-logo {
+    padding: 28px 0 28px !important;
+    max-width: 180px !important;
+    #logo {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+}
+
+.main-menu {
+    height: auto !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+}
+
+#menu ul {
+    float: none !important;
+    display: table-cell !important;
+    list-style: outside none none !important;
+    text-align: center !important;
+    float: none !important;
+    margin: 0;
+    top: auto;
+    padding-left: 0px;
+    li {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+}
+
+#menu>ul {
+    display: block !important;
+}
+
+#menu>ul>li {
+    position: relative !important;
+    float: none;
+    display: inline-block !important;
+    vertical-align: top;
+    text-align: center;
+    z-index: 5;
+    margin: 0;
+    background-color: transparent;
+}
+
+#menu>ul>li>a {
+    color: black !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+}
+
+#menu>ul>li>a:hover {
+    color: #ebb5ac !important;
+}
+
+.wrap-breadcrumb {
+    display: none;
+    position: relative;
+    margin: 0px 0 35px;
+    width: 100%;
+    padding: 20px 0 20px;
+    text-align: left;
+    overflow: hidden;
+    background: #f5f5f5;
+}

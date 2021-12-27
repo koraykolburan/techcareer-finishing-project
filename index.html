@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <base href="_blank">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="top">
+        <div class="container">
+            <div class="nav-left">
+                <div class="nav-text">Free Shipping On Domestic Orders Over $150</div>
+            </div>
+            <div class="nav-right">
+                <div class="dropdown-myaccount">
+                    <a class="btn btn-secondary dropdown-toggle bg-dark" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/login" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" title="My Account">
+                          My Account
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/register">Register</a></li>
+                        <li><a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/login">Login</a></li>
+                        <li><a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=checkout/cart">Shopping Cart</a></li>
+                        <li><a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=checkout/cart">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="lang-currency">
+                    <div class="language ">
+                        <a class="btn btn-secondary dropdown-toggle bg-dark" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/login" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" title="My Account">
+                            <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/catalog/language/en-gb/en-gb.png" alt=""> Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/register"><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/catalog/language/en-gb/en-gb.png" alt=""> English</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/login"><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/catalog/language/ar/ar.png" style="padding-right: 3px;" alt="">Arabic</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="currency">
+                        <a class="btn btn-secondary dropdown-toggle bg-dark" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/login" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" title="My Account">
+                            $ Currency
+                          </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/register">€ Euro</a></li>
+                            <li><a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/login">£ Pound Sterling</a></li>
+                            <li><a class="dropdown-item" href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=checkout/cart">$ US Dollar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="container">
+                <div class="row">
+                    <div class="header-main">
+                        <div class="header-logo float-start">
+                            <div id="logo">
+                                <a href=""><img src="./assets/images/logo.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="header-cart">
+                            <span><i class="fas fa-shopping-bag"></i></span>
+                        </div>
+                        <div class="fav-icon">
+                            <a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/login"><i class="far fa-heart"></i></a>
+                        </div>
+                        <div class="search-icon">
+                            <span><i class="fas fa-search"></i></span>
+                        </div>
+                        <div class="header-menu">
+                            <nav class="nav-container">
+                                <div class="nav-inner">
+                                    <div class="main-menu" id="menu">
+                                        <ul class="nav navbar-nav">
+                                            <li class="nav-item active">
+                                                <a class="nav-link active" href="#fashion">Fashion</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#women-tshirt">Women T-Shirt</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#crop-top">Crop Top</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#sports-wears">Sports Wears</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#more">More</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrap-breadcrumb parallax-breadcrumb">
+        <div class="container"></div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content-top">
+        <div class="main">
+            <div id="spinner" style="display:none"></div>
+            <div class="container-banner">
+                <a href="#"><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/main-banner-1-1903x792.jpg" alt="banner1" class="image"></a>
+                <div class="overlay">
+                    <a href="#"><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/main-banner-2-1903x792.jpg" alt="banner2" class="banner2"></a>
+                </div>
+            </div>
+        </div>
+        <div class="category-list-block">
+            <div class="container category-container">
+                <div class="category-wrapper">
+                    <div class="category-lists  text-center">
+                        <ul>
+                            <div class="list-wrapper">
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner">
+                                        <div class="block-content">
+                                            <div class="cate-image">
+                                                <div class="cate-inner">
+                                                    <img class="cate-icon" src="https://img.icons8.com/external-linector-lineal-color-linector/64/000000/external-t-shirt-travel-packing-linector-lineal-color-linector.png" />
+                                                    <p><a href=" ">Women T-shirt</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner ">
+                                        <div class="block-content ">
+                                            <div class="cate-image ">
+                                                <div class="cate-inner ">
+                                                    <img class="cate-icon " src="https://img.icons8.com/office/2x/dress-back-view.png">
+                                                    <p><a href=" ">Girls Dress</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner ">
+                                        <div class="block-content ">
+                                            <div class="cate-image ">
+                                                <div class="cate-inner ">
+                                                    <img class="cate-icon " src="https://img.icons8.com/external-konkapp-outline-color-konkapp/452/external-sport-shoes-gym-konkapp-outline-color-konkapp.png">
+                                                    <p><a href=" ">Men Shoes</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner ">
+                                        <div class="block-content ">
+                                            <div class="cate-image ">
+                                                <div class="cate-inner ">
+                                                    <img class="cate-icon " src="https://img.icons8.com/doodle/452/shirt.png">
+                                                    <p><a href=" ">Men Shirt</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner ">
+                                        <div class="block-content ">
+                                            <div class="cate-image ">
+                                                <div class="cate-inner ">
+                                                    <img class="cate-icon " src="https://img.icons8.com/emoji/452/watch-emoji.png">
+                                                    <p><a href=" ">Hand Watch</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner ">
+                                        <div class="block-content ">
+                                            <div class="cate-image ">
+                                                <div class="cate-inner ">
+                                                    <img class="cate-icon " src="https://img.icons8.com/cotton/452/women-shoes.png">
+                                                    <p><a href=" ">Girls Sandals</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner ">
+                                        <div class="block-content ">
+                                            <div class="cate-image ">
+                                                <div class="cate-inner ">
+                                                    <img class="cate-icon " src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/2x/external-shorts-vacation-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png">
+                                                    <p><a href=" ">Shorts</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                                <div class="item1 me-1 ps-lg-3 ps-md-0">
+                                    <li class="item-inner ">
+                                        <div class="block-content ">
+                                            <div class="cate-image ">
+                                                <div class="cate-inner ">
+                                                    <img class="cate-icon " src="https://img.icons8.com/plasticine/2x/skirt.png">
+                                                    <p><a href=" ">Skirt</a></p>
+                                                    </img>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home -->
+    <div class="home ">
+        <div class="container ">
+            <h2 class="text-center fw-bold">Latest Collection</h2>
+            <div class="border-title justify-content-center mx-auto"></div>
+            <div class="col-sm-12" id="content">
+                <div class="hometab box tab-head">
+                    <ul class="nav nav-tabs pb-4 m-auto justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Dress &amp; Jumpsuits </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Women T-Shirt</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Jackets &amp; Blazer</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <div class="row row-cols-1 row-cols-md-4 g-4 ">
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/01-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">6% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Accusantium Doloremque</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$98.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$104.00</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/06-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">11% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Accusantium Volupta blanditiis</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$104.00</h6>
+                                                        <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$116.00</p>
+                                                        <div class="d-grid middle mt-4 ">
+                                                            <button class="text btn btn-primary ">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/03-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/08-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">2% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Commodi Consequatur</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$134.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$136.40</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/04-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/10-456x586.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">8% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Consectetur Hampden</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$110.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$119.60</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/02-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/07-456x586.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">6% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Consectetur Hampden omnis</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$104.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$108.80</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/11-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/02-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">4% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Nostrud Exercitation</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$78.80</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$83.60</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/12-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/13-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href="# ">Accusantium Doloremque</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$105.20</h5>
+
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/13-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/14-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Praesentium Voluptatum</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$128.00</h5>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <div class="row row-cols-1 row-cols-md-4 g-4 ">
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/03-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/08-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">2% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Commodi Consequatur</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$134.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$136.40</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/04-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/10-456x586.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">8% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Consectetur Hampden</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$110.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$119.60</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/01-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">6% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Accusantium Doloremque</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$98.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$104.00</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/06-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">11% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Accusantium Volupta blanditiis</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$104.00</h6>
+                                                        <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$116.00</p>
+                                                        <div class="d-grid middle mt-4 ">
+                                                            <button class="text btn btn-primary ">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/02-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/07-456x586.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">6% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Consectetur Hampden omnis</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$104.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$108.80</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/11-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/02-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">4% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Nostrud Exercitation</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$78.80</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$83.60</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/12-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/13-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href="# ">Accusantium Doloremque</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$105.20</h5>
+
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/13-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/14-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Praesentium Voluptatum</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$128.00</h5>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <div class="row row-cols-1 row-cols-md-4 g-4 ">
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/04-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/10-456x586.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">8% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Consectetur Hampden</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$110.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$119.60</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/11-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/02-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">4% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Nostrud Exercitation</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$78.80</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$83.60</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/03-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/08-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">2% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Commodi Consequatur</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$134.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$136.40</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/01-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">6% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Accusantium Doloremque</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$98.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$104.00</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/06-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">11% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Accusantium Volupta blanditiis</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$104.00</h6>
+                                                        <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$116.00</p>
+                                                        <div class="d-grid middle mt-4 ">
+                                                            <button class="text btn btn-primary ">Add To Cart</button>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/02-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/07-456x586.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text2 ">6% off</div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Consectetur Hampden omnis</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$104.00</h5>
+                                                            <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$108.80</p>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/12-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/13-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href="# ">Accusantium Doloremque</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$105.20</h5>
+
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col ">
+                                            <div class="card h-100 shadow-sm pb-4 ">
+                                                <div class="container-card ">
+                                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/13-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                                    <div class="overlay ">
+                                                        <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/14-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                                        <a href="# ">
+                                                            <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                                        </a>
+                                                        <a href="# ">
+                                                            <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                                        </a>
+                                                    </div>
+                                                    <a href="# ">
+                                                        <div class="text3 "><i class="far fa-heart "></i>
+                                                            <span class="tooltiptext ">Add to Wish List</span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="card-body ">
+                                                    <p class="card-title "><a href=" ">Praesentium Voluptatum</a></p>
+                                                    <p class="card-text ">
+                                                        <h6 style="display: inline-block; ">$128.00</h5>
+                                                            <div class="d-grid middle mt-4 ">
+                                                                <button class="text btn btn-primary ">Add To Cart</button>
+                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categorytab-right ">
+                        <div class="tab-content " style="display: block; ">
+
+                            <div class="cz-status ">
+                                <i class="fa fa-frown-o "></i>
+                            </div>
+                            <div class="viewmore ">
+                                <a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=product/category&amp;path=27 " class="btn btn-primary ">View More Products</a>
+                                <span class="tabcategory0_default_width " style="display: none; visibility: hidden; "></span>
+                            </div>
+                            <span class="tabcategory0_default_width " style="display: none; visibility: hidden; "></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Details -->
+    <div class="bottom-banners">
+        <div class="part1 one-third">
+            <div class="banner-part1">
+                <a href="#" class="banner-anchor">
+                    <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/cms-banner-1.jpg" alt="banner" class="img-fluid">
+                </a>
+                <div class="banner-detail">
+                    <div class="offer-title">30% Discount</div>
+                    <div class="main-title">
+                        Women Special
+                        <span>Collection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part2 one-third">
+            <div class="banner-part2">
+                <a href="#" class="banner-anchor">
+                    <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/cms-banner-2.jpg" alt="banner">
+                </a>
+                <div class="banner-detail">
+                    <div class="offer-title">Summer Special offer</div>
+                    <div class="main-title">Sale!
+                    </div>
+                    <div class="sub-title">Up To 50% Discount</div>
+                </div>
+            </div>
+        </div>
+        <div class="part3 one-third">
+            <div class="banner-part1">
+                <a href="#" class="banner-anchor">
+                    <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/cms-banner-3.jpg" alt="banner" class="img-fluid">
+                </a>
+                <div class="banner-detail">
+                    <div class="offer-title">20% Discount</div>
+                    <div class="main-title">
+                        Men Special
+                        <span>Collection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box special">
+        <div class="box-head">
+            <div class="box-heading">
+                <h2 class="text-center fw-bold">Weekly Deals</h2>
+                <div class="border-title justify-content-center mx-auto"></div>
+            </div>
+            <div class="offerclock">
+                <div class="time">
+                    <span class="day count" id="day">660</span>
+                    <span class="offertext">Days</span>
+                </div>
+                <div class="time">
+                    <span class="count" id="hour">13</span>
+                    <span class="offertext">Hours</span>
+                </div>
+                <div class="time">
+                    <span class="minute count" id="minute">22</span>
+                    <span class="offertext">Mins</span>
+                </div>
+                <div class="time">
+                    <span class="second-count" id="second">24</span>
+                    <span class="offertext">Secs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="content">
+        <div class="box ">
+            <div class="box-content ">
+                <div class="row row-cols-1 row-cols-md-4 g-4 ">
+                    <div class="col ">
+                        <div class="card h-100 shadow-sm pb-4 ">
+                            <div class="container-card ">
+                                <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/01-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                <div class="overlay ">
+                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                    <a href="# ">
+                                        <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                    </a>
+                                    <a href="# ">
+                                        <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                    </a>
+                                </div>
+                                <div class="text2 ">6% off</div>
+                                <a href="# ">
+                                    <div class="text3 "><i class="far fa-heart "></i>
+                                        <span class="tooltiptext ">Add to Wish List</span></div>
+                                </a>
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-title "><a href=" ">Accusantium Doloremque</a></p>
+                                <p class="card-text ">
+                                    <h6 style="display: inline-block; ">$98.00</h5>
+                                        <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$104.00</p>
+                                        <div class="d-grid middle mt-4 ">
+                                            <button class="text btn btn-primary ">Add To Cart</button>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card h-100 shadow-sm pb-4 ">
+                            <div class="container-card ">
+                                <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/05-327x420.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                <div class="overlay ">
+                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/06-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                    <a href="# ">
+                                        <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                    </a>
+                                    <a href="# ">
+                                        <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                    </a>
+                                </div>
+                                <div class="text2 ">11% off</div>
+                                <a href="# ">
+                                    <div class="text3 "><i class="far fa-heart "></i>
+                                        <span class="tooltiptext ">Add to Wish List</span></div>
+                                </a>
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-title "><a href=" ">Accusantium Volupta blanditiis</a></p>
+                                <p class="card-text ">
+                                    <h6 style="display: inline-block; ">$104.00</h6>
+                                    <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$116.00</p>
+                                    <div class="d-grid middle mt-4 ">
+                                        <button class="text btn btn-primary ">Add To Cart</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card h-100 shadow-sm pb-4 ">
+                            <div class="container-card ">
+                                <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/03-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                <div class="overlay ">
+                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/08-327x420.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                    <a href="# ">
+                                        <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                    </a>
+                                    <a href="# ">
+                                        <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                    </a>
+                                </div>
+                                <div class="text2 ">2% off</div>
+                                <a href="# ">
+                                    <div class="text3 "><i class="far fa-heart "></i>
+                                        <span class="tooltiptext ">Add to Wish List</span></div>
+                                </a>
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-title "><a href=" ">Commodi Consequatur</a></p>
+                                <p class="card-text ">
+                                    <h6 style="display: inline-block; ">$134.00</h5>
+                                        <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$136.40</p>
+                                        <div class="d-grid middle mt-4 ">
+                                            <button class="text btn btn-primary ">Add To Cart</button>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card h-100 shadow-sm pb-4 ">
+                            <div class="container-card ">
+                                <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/04-456x586.jpg " alt="banner " class="image img-fluid " style="width:100% "></a>
+                                <div class="overlay ">
+                                    <a href="# "><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/10-456x586.jpg " alt="banner " class="img-fluid " style="width:100% "></a>
+                                    <a href="# ">
+                                        <div class="text4 "><i class="far fa-eye "></i><span class="tooltiptext ">Quick View</span></div>
+                                    </a>
+                                    <a href="# ">
+                                        <div class="text5 "><i class="fas fa-copy "></i><span class="tooltiptext ">Add to Compare</span></div>
+                                    </a>
+                                </div>
+                                <div class="text2 ">8% off</div>
+                                <a href="# ">
+                                    <div class="text3 "><i class="far fa-heart "></i>
+                                        <span class="tooltiptext ">Add to Wish List</span></div>
+                                </a>
+                            </div>
+                            <div class="card-body ">
+                                <p class="card-title "><a href=" ">Consectetur Hampden</a></p>
+                                <p class="card-text ">
+                                    <h6 style="display: inline-block; ">$110.00</h5>
+                                        <p class="text-muted " style="text-decoration: line-through; display: inline-block; ">$119.60</p>
+                                        <div class="d-grid middle mt-4 ">
+                                            <button class="text btn btn-primary ">Add To Cart</button>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <hr class="mt-5">
+    </div>
+
+    <!-- Brands -->
+    <div class="carousel">
+        <div class="carousel-block">
+            <div class="brand-carousel">
+                <ul>
+                    <li class="pe-5">
+                        <a href=""><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/6-130x87.png" alt=""></a>
+                    </li>
+                    <li class="pe-5">
+                        <a href=""><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/5-130x87.png" alt=""></a>
+                    </li>
+                    <li class="pe-5">
+                        <a href=""><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/4-130x87.png" alt=""></a>
+                    </li>
+                    <li class="pe-5">
+                        <a href=""><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/3-130x87.png" alt=""></a>
+                    </li>
+                    <li class="pe-5">
+                        <a href=""><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/7-130x87.png" alt=""></a>
+                    </li>
+                    <li class="pe-5">
+                        <a href=""><img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/1-130x87.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="video-block">
+        <div class="banner-video">
+            <video poster="https://www.shemazing.net/wp-content/uploads/2017/11/freestocks-org-187367-656x429.jpg" class="img-fluid" controls>
+                <source src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/video.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+             </video>
+        </div>
+        <span class="static-wrapper">
+            <span class="static-inner">
+            </span>
+        <a href="#" src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/video.mp4" class="link-text video" onclick="lightbox_open();">play</a>
+        </span>
+    </div>
+
+    <!-- Quotes -->
+    <div class="quotes">
+        <div class="quotes-container">
+            <div class="container">
+                <div class="quote-img"></div>
+                <div class="quote-p">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor.</p>
+                </div>
+                <div class="quote-title">
+                    <h5><a href="">jecob goeckno</a><span class="subheading">Manager</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blogs -->
+    <div class="box blogs">
+        <div class="box-heading">
+            <h2 class="text-center fw-bold">Our Latest Blog</h2>
+            <div class="border-title justify-content-center mx-auto"></div>
+        </div>
+        <div class="container mt-5">
+            <div class="box-content">
+                <div class="box-products">
+                    <div class="box-wrapper">
+                        <div class="blog1">
+                            <div class="product-block">
+                                <div class="product-inner">
+                                    <div class="product-top">
+                                        <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/blog-6-1043x1340.jpg" alt="Our Latest Blog" class="img-thumbnail">
+                                    </div>
+                                    <div class="product-bottom">
+                                        <a href="#">There are many variations of passages of Lorem Ipsum available</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog1">
+                            <div class="product-block">
+                                <div class="product-inner">
+                                    <div class="product-top" id="top2">
+                                        <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/blog-5-1043x1340.jpg" alt="Our Latest Blog" class="img-thumbnail">
+                                    </div>
+                                    <div class="product-bottom">
+                                        <a href="#">The standard chunk of Lorem Ipsum used since the 1500s</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog1">
+                            <div class="product-block">
+                                <div class="product-inner">
+                                    <div class="product-top" id="top2">
+                                        <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/blog-4-1043x1340.jpg" alt="Our Latest Blog" class="img-thumbnail">
+                                    </div>
+                                    <div class="product-bottom">
+                                        <a href="#">Lorem Ipsum is therefore always free from repetition</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog1">
+                            <div class="product-block">
+                                <div class="product-inner">
+                                    <div class="product-top">
+                                        <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/cache/catalog/blog-3-1043x1340.jpg" alt="Our Latest Blog" class="img-thumbnail">
+                                    </div>
+                                    <div class="product-bottom">
+                                        <a href="#">Many desktop publishing packages and web page editors</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+    <div class="container">
+        <div class="service-block">
+            <div class="service-area">
+                <div class="service-third service1">
+                    <div class="service-icon icon1"></div>
+                    <div class="service-content">
+                        <div class="service-heading">Worldwide Shipping</div>
+                        <div class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                    </div>
+                </div>
+                <div class="service-third service2">
+                    <div class="service-icon icon2"></div>
+                    <div class="service-content">
+                        <div class="service-heading">Easy 30 Day Returns</div>
+                        <div class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                    </div>
+                </div>
+                <div class="service-third service3">
+                    <div class="service-icon icon3"></div>
+                    <div class="service-content">
+                        <div class="service-heading">Money Back Guarentee</div>
+                        <div class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer-->
+
+    <footer>
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="footer-blocks">
+                    <div class="col-sm-3 column footerleft me-5">
+                        <div class="contact-block">
+                            <h5 class="">Store information</h5>
+                            <ul>
+                                <li><i class="fa fa-map-marker"></i> <span>Styleway - Fashion Store<br>507-Union Trade <br> ipsum Doler Centre<br>United States</span></li>
+                                <li><i class="fa fa-phone"></i> <span>000-000-0000</span></li>
+                                <li><i class="fa fa-envelope-o"></i><span>sales@yourcompany.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 column" id="info">
+                        <h5>Information</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=information/information&amp;information_id=4">About Us</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=information/information&amp;information_id=6">Delivery Information</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=information/sitemap">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div id="extra-link" class="col-sm-3 column">
+                        <h5>Extras</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=product/manufacturer">Brands</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/voucher">Gift Certificates</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=affiliate/login">Affiliate</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=product/special">Specials</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=information/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 column">
+                        <h5>My Account</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/account">My Account</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/order">Order History</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/wishlist">Wish List</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/newsletter">Newsletter</a></li>
+                            <li><a href="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/index.php?route=account/return/add">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 column footerright">
+
+                        <div class="newsletter">
+                            <div class="container">
+                                <div class="box-heading">Our Newsletter!</div>
+                                <div class="news-subtitle">There are many variations of passages of form humour or randomised.</div>
+                                <div class="newsright">
+                                    <form action="" method="post">
+                                        <div class="form-group required">
+                                            <label class="col-sm-2 control-label" for="input-firstname"></label>
+                                            <div class="input-news">
+                                                <input type="email" name="txtemail" id="txtemail" value="" placeholder="Enter Your Email Address" class="form-control input-lg">
+                                            </div>
+                                            <div class="subscribe-btn">
+                                                <button type="submit" class="btn btn-default btn-lg" ">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-block ">
+                            <ul>
+                                <li class="facebook "><a href="# "><span><i class="fab fa-facebook-f "></i></span></a></li>
+                                <li class="twitter "><a href="# "><span><i class="fab fa-twitter "></i></span></a></li>
+                                <li class="youtube "><a href="# "><span><i class="fab fa-youtube "></i></span></a></li>
+                                <li class="googleplus "><a href="# "><span><i class="fab fa-google-plus-g "></i></span></a></li>
+                                <li class="instagram "><a href="# "><span><i class="fab fa-instagram "></i></span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-footer " class="bottomfooter ">
+            <div class="container ">
+                <div class="footer-inner ">
+                    <div class="row ">                       
+                            <div class="powered col-sm-6 pe-5 "><p id="powered " class="powered ">Powered By <a href=" ">Koray Kolburan</a> Styleway - Fashion Store © 2021</p></div>
+                            <div class="paiement_logo_block footer-block col-sm-6 ps-5 ms-0 ">
+                                <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/visa.png " alt="visa " width="40 " height="25 ">
+                                <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/master_card.png " alt="master_card " width="40 " height="25 ">
+                                <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/american_express.png " alt="american_express " width="40 " height="25 ">
+                                <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/discover.png " alt="discover " width="40 " height="25 ">
+                                 <img src="https://capricathemes.com/opencart/OPC09/OPC090208/OPC1/image/catalog/paypal.png " alt="paypal " width="40 " height="25 ">
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js "></script>
+
+    <!-- JavaScript  -->
+    <script src="./assets/js/script.js "></script>
+</body>
+
+</html>
